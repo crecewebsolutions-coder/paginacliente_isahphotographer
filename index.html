@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isa Hernandez Photo & Makeup LLC · Isa Hernandez Photo & Makeup LLC · Phoenix, AZ</title>
+  <meta name="description" content="Estudio de fotografía y maquillaje profesional en Phoenix, Arizona. Retratos, parejas, bodas, quinceañeras, cumpleaños y eventos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Site Header (Official Logo Up Top) -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Official Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <span class="brand-name">Isa Hernandez</span>
+          <span class="brand-sub">PHOTO &amp; MAKEUP</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link active" data-i18n="nav_home">INICIO</a>
+          <a href="about.html" class="nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+          <a href="services.html" class="nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+          <a href="policies.html" class="nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+          <a href="faq.html" class="nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav_contact">CONTACTO</a>
+        
+        </nav>
+
+        <!-- Header Actions: Lang Switch, IG, Book Button -->
+        <div class="nav-actions">
+
+          
+          <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="nav-social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="booking.html" class="btn btn-primary header-book-btn" data-i18n="btn_book_header">RESERVAR CITA</a>
+
+          <button class="mobile-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <span class="brand-name">Isa Hernandez</span>
+          <span class="brand-sub">PHOTO &amp; MAKEUP</span>
+        </a>
+      <button class="mobile-drawer-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link active" data-i18n="nav_home">INICIO</a>
+      <a href="about.html" class="mobile-nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+      <a href="services.html" class="mobile-nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+      <a href="portfolio.html" class="mobile-nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+      <a href="policies.html" class="mobile-nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+      <a href="faq.html" class="mobile-nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">CONTACTO</a>
+      <a href="booking.html" class="mobile-nav-link" style="color: var(--text-dark); font-weight: 700;" data-i18n="nav_booking">RESERVAR CITA</a>
+    </div>
+    <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem; margin-top: auto;">
+      <div class="mobile-drawer-lang">
+        <button class="lang-btn active" data-lang="es">ESPAÑOL</button>
+        <button class="lang-btn" data-lang="en">ENGLISH</button>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block" style="margin-bottom: 0.8rem;" data-i18n="btn_book_header">RESERVAR CITA</a>
+      <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; letter-spacing: 0.15em;">PHOENIX, AZ · @isaphotographer</p>
+    </div>
+  </aside>
+
+  <!-- 1. HERO SECTION WITH BACKGROUND SLIDESHOW -->
+  <section class="hero-editorial">
+    <!-- Slideshow Background Container -->
+    <div class="hero-slideshow-container">
+      <div class="hero-slide active" style="background-image: url('images/hero.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-2.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-3.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-4.jpg');"></div>
+      <div class="hero-slide-overlay"></div>
+    </div>
+
+    <!-- Hero Slide Dots Indicator -->
+    <div class="hero-slide-dots">
+      <div class="hero-dot active" title="Slide 1"></div>
+      <div class="hero-dot" title="Slide 2"></div>
+      <div class="hero-dot" title="Slide 3"></div>
+      <div class="hero-dot" title="Slide 4"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="container">
+      <div class="hero-content reveal">
+        <span class="hero-kicker" data-i18n="hero_kicker">FOTOGRAFÍA · MAQUILLAJE · HISTORIAS REALES</span>
+        <h1 class="hero-title" data-i18n="hero_title">Capturando tus momentos más especiales</h1>
+        <span class="hero-script-accent" data-i18n="hero_script">con arte, emoción y autenticidad</span>
+        <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+          <a href="portfolio.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_view_work">VER PORTAFOLIO</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="booking.html" class="btn btn-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_session">RESERVAR SESIÓN</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll-indicator">
+      <span data-i18n="scroll_text">DESLIZA</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 2. INTRO / ABOUT ISA -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="intro-grid">
+        <!-- Left: Clean Polaroid Cards -->
+        <div class="polaroid-collage reveal-left">
+          <div class="polaroid-main">
+            <img src="images/isa-index2.JPG" alt="Isabela Hernandez - Fotógrafa y Maquillista">
+          </div>
+          <div class="polaroid-secondary">
+            <img src="images/isa-index.JPG" alt="Brochas de Maquillaje Profesional">
+          </div>
+          <div class="polaroid-tertiary">
+            <img src="images/isa-index3.JPG" alt="Atardecer Desierto de Arizona">
+          </div>
+        </div>
+
+        <!-- Right: Clean Bio Content -->
+        <div class="intro-bio-content reveal-right">
+          <span class="section-kicker" data-i18n="about_kicker">SOBRE MÍ</span>
+          <h2 class="intro-author-name">Isa Hernandez</h2>
+          <span class="intro-author-sub" data-i18n="about_subtitle">PHOTO & MAKE UP · PHOENIX, AZ</span>
+          <p class="intro-bio-text" data-i18n="about_bio">
+            Soy Isa, fotógrafa y maquillista apasionada por capturar la belleza en todas sus formas. Me encanta ayudar a las personas a sentirse seguras, cómodas y auténticas, ya sea frente a la cámara o con un maquillaje que realce su esencia.
+          </p>
+          <div>
+            <span class="script-signature" data-i18n="about_quote">Más que fotos, son recuerdos.</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="about.html" class="btn btn-outline">
+              <span data-i18n="btn_more_about">CONOCE MÁS SOBRE ISA</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES STRIP (Airy & Clean) -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="services_kicker">MIS SERVICIOS</span>
+        <h2 class="section-title" data-i18n="services_title">Fotografía & Maquillaje</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">
+          Desde retratos íntimos hasta celebraciones memorables en Phoenix y todo Arizona.
+        </p>
+      </div>
+
+      <!-- 6-Icon Grid -->
+      <div class="services-strip reveal-zoom">
+        <a href="services.html#portraits" class="service-strip-item">
+          <i class="fa-solid fa-camera-retro service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_portraits">RETRATOS</span>
+        </a>
+
+        <a href="services.html#couples" class="service-strip-item">
+          <i class="fa-solid fa-user-group service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_couples">PAREJAS</span>
+        </a>
+
+        <a href="services.html#weddings" class="service-strip-item">
+          <i class="fa-solid fa-ring service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_weddings">BODAS</span>
+        </a>
+
+        <a href="services.html#milestones" class="service-strip-item">
+          <i class="fa-solid fa-wand-magic-sparkles service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_quince">QUINCEAÑERAS</span>
+        </a>
+
+        <a href="services.html#events" class="service-strip-item">
+          <i class="fa-solid fa-users service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_events">EVENTOS</span>
+        </a>
+
+        <a href="services.html#makeup" class="service-strip-item">
+          <i class="fa-solid fa-paintbrush service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_makeup">MAQUILLAJE & PEINADO</span>
+        </a>
+      </div>
+
+      <div style="text-align: center;" class="reveal">
+        <a href="services.html" class="btn btn-outline">
+          <span data-i18n="btn_all_services">VER LISTA COMPLETA DE PRECIOS</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PORTFOLIO FEATURED -->
+  <section class="section-pad bg-sand-tint" id="portfolio">
+    <div class="container">
+      <div class="editorial-gallery-layout">
+        <!-- Left: Info & Link -->
+        <div class="editorial-gallery-info reveal-left">
+          <span class="section-kicker" data-i18n="port_kicker">PORTAFOLIO</span>
+          <h2 class="section-title" data-i18n="port_title">Momentos que cuentan historias</h2>
+          <p class="section-subtitle" data-i18n="port_subtitle" style="margin-bottom: 2.2rem;">
+            Cada sesión es única y cada imagen tiene un propósito. Aquí puedes apreciar una selección de mi trabajo.
+          </p>
+          <a href="portfolio.html" class="btn btn-outline">
+            <span data-i18n="btn_view_gallery">VER GALERÍA COMPLETA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Right: Asymmetric Editorial Grid -->
+        <div class="editorial-gallery-grid reveal-right">
+          <div class="editorial-col-tall">
+            <img src="images/bday-4.jpg" alt="Boda en Arizona">
+          </div>
+          <div class="editorial-col-stack">
+            <img src="images/family-4.JPG" alt="Maquillaje Profesional">
+            <img src="images/makeup-3.JPG" alt="Quinceañera Rosa">
+          </div>
+          <div class="editorial-col-tall">
+            <img src="images/portrait-5.jpg" alt="Graduación Senior">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. THE ISA HERNANDEZ EXPERIENCE -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="exp_kicker">THE ISA HERNANDEZ EXPERIENCE</span>
+        <h2 class="section-title" data-i18n="exp_title">Un Proceso Diseñado Para Ti</h2>
+        <p class="section-subtitle" data-i18n="exp_subtitle">
+          Desde el primer contacto hasta la entrega de tu galería privada, cada detalle está pensado para tu tranquilidad.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-step reveal delay-1">
+          <div class="step-number">01</div>
+          <h4 class="step-title" data-i18n="step1_title">01 — CONECTAR</h4>
+          <p class="step-desc" data-i18n="step1_desc">Platícame tu visión, la fecha que deseas y el estilo que imaginas.</p>
+        </div>
+
+        <div class="experience-step reveal delay-2">
+          <div class="step-number">02</div>
+          <h4 class="step-title" data-i18n="step2_title">02 — PLANIFICAR</h4>
+          <p class="step-desc" data-i18n="step2_desc">Definimos la locación, moodboard personalizado y guía de vestuario.</p>
+        </div>
+
+        <div class="experience-step reveal delay-3">
+          <div class="step-number">03</div>
+          <h4 class="step-title" data-i18n="step3_title">03 — CREAR</h4>
+          <p class="step-desc" data-i18n="step3_desc">Sesión relajada con dirección de poses y estilismo de maquillaje profesional.</p>
+        </div>
+
+        <div class="experience-step reveal delay-4">
+          <div class="step-number">04</div>
+          <h4 class="step-title" data-i18n="step4_title">04 — RECIBIR</h4>
+          <p class="step-desc" data-i18n="step4_desc">Entrega de tus fotos en alta resolución en tu galería privada protegida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHAT'S INCLUDED -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="inc_kicker">LO QUE INCLUYE</span>
+        <h2 class="section-title" data-i18n="inc_title">Calidad & Dedicación en Cada Sesión</h2>
+        <p class="section-subtitle" data-i18n="inc_subtitle">Un servicio completo donde no tienes que preocuparte por nada.</p>
+      </div>
+
+      <div class="inclusions-grid">
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_1">Consulta previa & Asesoría personalizada</span>
+        </div>
+        <div class="inclusion-card reveal delay-2">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_2">Planificación de concepto & Moodboard</span>
+        </div>
+        <div class="inclusion-card reveal delay-3">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_3">Guía de vestuario & Paleta de color</span>
+        </div>
+        <div class="inclusion-card reveal delay-4">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_4">Dirección de poses paso a paso</span>
+        </div>
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_5">Edición profesional minimalista</span>
+        </div>
+        <div class="inclusion-card reveal delay-2">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_6">Retoque natural de piel</span>
+        </div>
+        <div class="inclusion-card reveal delay-3">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-images"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_7">Galería privada en línea (Pixieset)</span>
+        </div>
+        <div class="inclusion-card reveal delay-4">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_8">Descargas digitales en alta resolución</span>
+        </div>
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_9">Derechos de impresión (Print Release)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PHOTO + MAKEUP FEATURE -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="photo-makeup-split">
+        <div class="split-image-container reveal-left">
+          <img src="images/studio-setup.jpg" alt="Estudio Isa Hernandez Photo & Makeup LLC">
+          <div class="split-badge-overlap">
+            <h4>Arte Integral</h4>
+            <p>Maquillaje profesional y fotografía en perfecta sincronía, bajo un mismo techo.</p>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-kicker" data-i18n="feat_kicker">DUALIDAD ARTÍSTICA</span>
+          <h2 class="section-title" data-i18n="feat_title" style="text-align: left;">Fotografía + Maquillaje en un Solo Estudio</h2>
+          <p class="section-subtitle" data-i18n="feat_desc" style="text-align: left; margin-bottom: 2rem;">
+            Olvídate de coordinar proveedores externos. En mi estudio en Phoenix realizo tu maquillaje y peinado profesional formulado específicamente para lucir radiante bajo la luz de la cámara.
+          </p>
+          <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+            <a href="services.html#makeup" class="btn btn-outline" data-i18n="btn_explore_makeup">VER SERVICIOS DE MAQUILLAJE</a>
+            <a href="booking.html" class="btn btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. OFFICIAL PACKAGES & PRICING TEASER -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="pkg_kicker">LISTA OFICIAL DE PRECIOS</span>
+        <h2 class="section-title" data-i18n="pkg_title">Paquetes de Cumpleaños & Sesiones</h2>
+        <p class="section-subtitle" data-i18n="pkg_subtitle">
+          Tarifas transparentes. Para asegurar tu fecha es necesario un depósito no reembolsable de $50 dólares.
+        </p>
+      </div>
+
+      <div class="packages-teaser-grid">
+        <!-- Silver $225 -->
+        <div class="package-card reveal delay-1">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_silver_name">Silver</h3>
+            <div class="package-price-starting" style="font-size: 1.4rem; color: var(--text-dark); margin-bottom: 0.3rem;">$225</div>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_silver_time">45 MINUTOS · 1 FONDO</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_silver_f1">8 imágenes digitales editadas profesionalmente</li>
+              <li data-i18n="pkg_silver_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_silver_f3">1 cambio de vestuario</li>
+              <li data-i18n="pkg_silver_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_silver_f5">Entrega en un máximo de 2 semanas</li>
+            </ul>
+          </div>
+          <a href="booking.html?package=silver" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- Golden $280 (Featured) -->
+        <div class="package-card featured reveal delay-2">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_gold_name">Golden</h3>
+            <div class="package-price-starting" style="font-size: 1.4rem; color: var(--text-dark); margin-bottom: 0.3rem;">$280</div>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_gold_time">1 HORA · 1 FONDO</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_gold_f1">10 imágenes digitales editadas profesionalmente</li>
+              <li data-i18n="pkg_gold_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_gold_f3">2 cambios de vestuario</li>
+              <li data-i18n="pkg_gold_f4">Asesoría previa de fotos & Guía de poses</li>
+              <li data-i18n="pkg_gold_f5">Entrega en 1 semana y media</li>
+            </ul>
+          </div>
+          <a href="booking.html?package=golden" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- Platinum $420 -->
+        <div class="package-card reveal delay-3">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_plat_name">Platinum</h3>
+            <div class="package-price-starting" style="font-size: 1.4rem; color: var(--text-dark); margin-bottom: 0.3rem;">$420</div>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_plat_time">HASTA 1.5 HORAS · 2 FONDOS</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_plat_f1">12 imágenes digitales editadas profesionalmente</li>
+              <li data-i18n="pkg_plat_f2">3 fotos adicionales en blanco y negro</li>
+              <li data-i18n="pkg_plat_f3">2 cambios de vestuario & Asesoría de concepto</li>
+              <li data-i18n="pkg_plat_f4">Entrega máxima 3 días después de la sesión</li>
+              <li data-i18n="pkg_plat_f5">Incluye reel para Instagram & Foto impresa 8x10</li>
+            </ul>
+          </div>
+          <a href="booking.html?package=platinum" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+      </div>
+
+      <div class="pricing-notice-box reveal" style="max-width: 800px; margin: 3.5rem auto 0 auto; text-align: center;">
+        <p style="margin: 0; font-weight: 500;" data-i18n="pkg_deposit_note">
+          Para asegurar la fecha en calendario es necesario un depósito no reembolsable de $50 dólares.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ARIZONA LOCATIONS & TRAVEL -->
+  <section class="az-locations-section">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 2rem;">
+        <span class="section-kicker" data-i18n="az_kicker">UBICACIÓN & COBERTURA</span>
+        <h2 class="section-title" data-i18n="az_title">Phoenix, Arizona & Alrededores</h2>
+        <p class="section-subtitle" data-i18n="az_subtitle">
+          Estudio privado en 1825 E Northern Ave, Phoenix, AZ 85020. Atendiendo a Phoenix, Scottsdale, Chandler, Tempe, Mesa, Goodyear, Avondale y Surprise, además de viajes por todo el estado.
+        </p>
+      </div>
+
+      <div class="az-cities-list reveal">
+        <span class="az-city-item">Phoenix</span>
+        <span class="az-city-item">Scottsdale</span>
+        <span class="az-city-item">Chandler</span>
+        <span class="az-city-item">Tempe</span>
+        <span class="az-city-item">Mesa</span>
+        <span class="az-city-item">Goodyear</span>
+        <span class="az-city-item">Avondale</span>
+        <span class="az-city-item">Surprise</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. KIND WORDS / TESTIMONIALS -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="test_kicker">TESTIMONIOS</span>
+        <h2 class="section-title" data-i18n="test_title">Palabras de Confianza</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal delay-1">
+          <p class="testimonial-quote">"Isa logró capturar exactamente lo que somos. Me sentí hermosa con el maquillaje que me hizo y las fotos de pareja quedaron como sacadas de una revista editorial."</p>
+          <div class="testimonial-author">Valeria & Daniel</div>
+          <div class="testimonial-session">Sesión Pareja en Phoenix Metro</div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <p class="testimonial-quote">"Una experiencia de 10. Fue muy paciente con mi familia y los niños. Las fotos finales las entregó en tan solo una semana y la calidad es insuperable."</p>
+          <div class="testimonial-author">Familia Morales</div>
+          <div class="testimonial-session">Sesión Familiar en Estudio</div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <p class="testimonial-quote">"Mis fotos de cumpleaños con el pastel artificial y la copa de vino quedaron increíbles. El mini video para mi Instagram causó furor. ¡Super recomendada!"</p>
+          <div class="testimonial-author">Camila R.</div>
+          <div class="testimonial-session">Sesión Cumpleaños Gold</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. INSTAGRAM FEED -->
+  <section class="section-pad-sm bg-sand-tint" style="border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2rem;" class="reveal">
+        <span class="section-kicker" data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span>
+        <h3 style="font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0.25em; text-transform: uppercase;">
+          <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" style="color: var(--text-dark);">
+            <i class="fa-brands fa-instagram" style="margin-right: 0.4rem;"></i>@isaphotographer
+          </a>
+        </h3>
+      </div>
+
+      <div class="instagram-strip reveal">
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home.JPG" alt="Instagram Post 1">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-1.JPG" alt="Instagram Post 2">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-2.jpg" alt="Instagram Post 3">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-3.jpg" alt="Instagram Post 4">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-4.jpg" alt="Instagram Post 5">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-5.jpg" alt="Instagram Post 6">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER (With Official Logo) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-hero-cta reveal">
+        <div class="footer-cta-text">
+          <span class="footer-script-title" data-i18n="footer_script">Hablemos</span>
+          <span class="footer-sub-prompt" data-i18n="footer_prompt">¿LISTA PARA CREAR ALGO INCREÍBLE?</span>
+        </div>
+        
+        <div>
+          <a href="booking.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_footer">RESERVAR AHORA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="footer-social-aside">
+          <div class="footer-social-icons">
+            <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="footer-instagram-tag">
+            <span data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span> · @isaphotographer
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Columns -->
+      <div class="footer-grid reveal">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.2rem;" aria-label="Isa Hernandez Photo & Makeup LLC">
+            <span class="brand-name" style="font-size: 2.1rem; color: #FFFFFF; line-height: 0.9;">Isa Hernandez</span>
+            <span class="brand-sub" style="color: var(--accent-sand);">PHOTO &amp; MAKEUP LLC</span>
+          </a>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); max-width: 320px; line-height: 1.8;">
+            Fotografía auténtica y maquillaje profesional en Phoenix, Arizona. Creando recuerdos atemporales con arte y emoción.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="about.html" data-i18n="nav_about">Sobre Isa</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Servicios & Precios</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portafolio</a></li>
+            <li><a href="policies.html" data-i18n="nav_policies">Políticas & Legal</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">Experiencia & FAQ</a></li>
+            <li><a href="booking.html" data-i18n="nav_booking">Reservar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#portraits">Retratos Individuales</a></li>
+            <li><a href="services.html#couples">Sesiones de Pareja</a></li>
+            <li><a href="services.html#milestones">Familias & Cumpleaños</a></li>
+            <li><a href="services.html#weddings">Bodas & Quinceañeras</a></li>
+            <li><a href="services.html#makeup">Maquillaje Profesional</a></li>
+            <li><a href="services.html#commercial">Personal Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto & Estudio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <a href="https://maps.google.com/?q=1825+E+Northern+Ave,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: underline;">
+              <i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>1825 E Northern Ave, Phoenix, AZ 85020
+            </a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Email: <a href="mailto:Isavision21@gmail.com" style="color: #FFFFFF;">Isavision21@gmail.com</a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 1.2rem;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Tel / WhatsApp: <a href="https://wa.me/16025823407" style="color: #FFFFFF;">+1 (602) 582-3407</a>
+          </p>
+          <a href="booking.html" class="btn btn-sm btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span data-i18n="footer_copyright">© Isa Hernandez · Photo & Make Up · Phoenix, AZ</span>
+        <span>Phoenix · Scottsdale · Chandler · Tempe · Mesa · Goodyear · Avondale · Surprise</span>
+        <div style="display: flex; gap: 1.2rem;">
+          <a href="policies.html" style="color: rgba(255,255,255,0.85); text-decoration: underline;">Políticas Oficiales & Términos</a>
+          <a href="policies.html#datos" style="color: rgba(255,255,255,0.85);">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev" aria-label="Anterior">&#10094;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav-btn lightbox-next" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <!-- Floating Mobile Language Selector Bubble -->
+  <div class="mobile-floating-lang" aria-label="Language Selector">
+    <i class="fa-solid fa-globe" style="color: rgba(255,255,255,0.7); font-size: 0.75rem; margin-right: 2px;"></i>
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
+

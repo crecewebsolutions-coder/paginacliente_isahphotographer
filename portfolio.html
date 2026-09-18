@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Isa Hernandez Photo & Makeup LLC · Phoenix, AZ</title>
+  <meta name="description" content="Portafolio oficial de Isa Hernandez Photo & Makeup LLC. Retratos editoriales, cumpleaños, familias, parejas, bodas y maquillaje profesional en Phoenix, Arizona.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header header-light">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <span class="brand-name">Isa Hernandez</span>
+          <span class="brand-sub">PHOTO &amp; MAKEUP</span>
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link" data-i18n="nav_home">INICIO</a>
+          <a href="about.html" class="nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+          <a href="services.html" class="nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+          <a href="portfolio.html" class="nav-link active" data-i18n="nav_portfolio">PORTAFOLIO</a>
+          <a href="policies.html" class="nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+          <a href="faq.html" class="nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav_contact">CONTACTO</a>
+        
+        </nav>
+
+        <div class="nav-actions">
+
+          
+          <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="nav-social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="booking.html" class="btn btn-primary header-book-btn" data-i18n="btn_book_header">RESERVAR CITA</a>
+
+          <button class="mobile-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <span class="brand-name">Isa Hernandez</span>
+          <span class="brand-sub">PHOTO &amp; MAKEUP</span>
+        </a>
+      <button class="mobile-drawer-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">INICIO</a>
+      <a href="about.html" class="mobile-nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+      <a href="services.html" class="mobile-nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+      <a href="portfolio.html" class="mobile-nav-link active" data-i18n="nav_portfolio">PORTAFOLIO</a>
+      <a href="policies.html" class="mobile-nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+      <a href="faq.html" class="mobile-nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">CONTACTO</a>
+      <a href="booking.html" class="mobile-nav-link" style="color: var(--text-dark); font-weight: 700;" data-i18n="nav_booking">RESERVAR CITA</a>
+    </div>
+    <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem; margin-top: auto;">
+      <div class="mobile-drawer-lang">
+        <button class="lang-btn active" data-lang="es">ESPAÑOL</button>
+        <button class="lang-btn" data-lang="en">ENGLISH</button>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block" style="margin-bottom: 0.8rem;" data-i18n="btn_book_header">RESERVAR CITA</a>
+      <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; letter-spacing: 0.15em;">PHOENIX, AZ · @isaphotographer</p>
+    </div>
+  </aside>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="section-kicker" data-i18n="port_page_kicker">HISTORIAS REALES</span>
+      <h1 data-i18n="port_page_title">Portafolio de Trabajo</h1>
+      <p data-i18n="port_page_desc">Una selección cuidada de sesiones fotográficas y estilismo creados en estudio y exteriores en Arizona.</p>
+    </div>
+  </section>
+
+  <!-- Filter & Masonry Gallery -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="portfolio-filter-bar reveal">
+        <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-border-all" style="margin-right: 0.4rem;"></i><span data-i18n="filter_all">TODOS (55)</span></button>
+        <button class="filter-btn" data-filter="birthdays"><i class="fa-solid fa-cake-candles" style="margin-right: 0.4rem;"></i><span data-i18n="filter_birthdays">CUMPLEAÑOS (7)</span></button>
+        <button class="filter-btn" data-filter="portraits"><i class="fa-solid fa-camera-retro" style="margin-right: 0.4rem;"></i><span data-i18n="filter_portraits">RETRATOS (9)</span></button>
+        <button class="filter-btn" data-filter="families"><i class="fa-solid fa-people-roof" style="margin-right: 0.4rem;"></i><span data-i18n="filter_families">FAMILIAS (15)</span></button>
+        <button class="filter-btn" data-filter="makeup"><i class="fa-solid fa-paintbrush" style="margin-right: 0.4rem;"></i><span data-i18n="filter_makeup">MAQUILLAJE & PEINADO (6)</span></button>
+        <button class="filter-btn" data-filter="couples"><i class="fa-solid fa-user-group" style="margin-right: 0.4rem;"></i><span data-i18n="filter_couples">PAREJAS (4)</span></button>
+        <button class="filter-btn" data-filter="professionals"><i class="fa-solid fa-briefcase" style="margin-right: 0.4rem;"></i><span data-i18n="filter_professionals">PROFESIONALES (8)</span></button>
+        <button class="filter-btn" data-filter="weddings"><i class="fa-solid fa-ring" style="margin-right: 0.4rem;"></i><span data-i18n="filter_weddings">BODAS (6)</span></button>
+      </div>
+
+      <!-- Masonry Grid with exactly 55 items -->
+      <div class="portfolio-masonry-grid">
+        <!-- Cumpleaños 1 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-1.jpg" alt="Golden Celebration 25" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Elegant Celebration 30</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 2 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-4.jpg" alt="Champagne & Glam Studio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Modern edge meets birthday celebration</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 3 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-3.jpg" alt="Sweet 16 Radiant Editorial" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Sweet Birthday Radiant Editorial</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 4 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-2.jpg" alt="Birthday Queen Session" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Birthday Queen Session</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 5 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-5.jpg" alt="Confetti & Velvet Backdrop" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Golden Celebration</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 6 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-6.jpg" alt="Desert Glow 30th Birthday" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Desert Glow 18th Birthday</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Cumpleaños 7 / 7 -->
+        <div class="portfolio-item reveal" data-category="birthdays">
+          <img src="images/gallery/bday-7.jpg" alt="Milestone Portrait Session" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Milestone Portrait Session</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-cake-candles"></i> Cumpleaños</span>
+          </div>
+        </div>
+        <!-- Retratos 1 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-1.jpg" alt="Elena · Retrato Natural Studio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Hello? It's me</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 2 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-3.jpg" alt="Senior Class · Graduación ASU" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Senior Class · Graduación ASU</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 3 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-4.jpg" alt="Blanco & Negro Minimalista" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Blanco & Negro Minimalista</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 4 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-2.jpg" alt="Luz Natural de Ventana" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Luz Natural de Ventana</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 5 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-7.jpg" alt="Editorial Velvet Mood" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Editorial Velvet Mood</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 6 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-5.jpg" alt="Graduación High School Phoenix" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Graduación High School Phoenix</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 7 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-9.jpg" alt="Sombra & Arte Monocromático" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Sombra & Arte Monocromático</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 8 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-6.jpg" alt="Retrato de Cumpleaños Íntimo" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Retrato de Cumpleaños Íntimo</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Retratos 9 / 9 -->
+        <div class="portfolio-item reveal" data-category="portraits">
+          <img src="images/gallery/portrait-8.jpg" alt="Mirada Editorial en Estudio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Mirada Editorial en Estudio</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-camera-retro"></i> Retratos</span>
+          </div>
+        </div>
+        <!-- Familias 1 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-1.jpg" alt="Familia Morales · Estudio Phoenix" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Morales · Estudio Phoenix</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 2 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-2.jpg" alt="Atardecer Familiar en Scottsdale" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Atardecer Familiar en Scottsdale</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 3 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-3.jpg" alt="Risas al Aire Libre · Tempe Park" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Risas al Aire Libre · Tempe Park</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 4 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-4.jpg" alt="Familia Ramírez · Abrazo en el Desierto" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Ramírez · Abrazo en el Desierto</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 5 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-5.jpg" alt="Generaciones · Abuela, Madre e Hija" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Generaciones · Abuela, Madre e Hija</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 6 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-6.jpg" alt="Primeros Pasos · Sesión Infantil" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Primeros Pasos · Sesión Infantil</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 7 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-7.jpg" alt="Familia Delgado · Sonrisas Cálidas" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Delgado · Sonrisas Cálidas</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 8 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-8.jpg" alt="Golden Hour en Papago Park" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Golden Hour en Papago Park</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 9 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-9.jpg" alt="Familia Cruz · Amor de Hogar" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Cruz · Amor de Hogar</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 10 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-10.jpg" alt="Retrato Tradicional de Estudio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Retrato Tradicional de Estudio</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 11 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-11.jpg" alt="Hermanos en Conexión" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Hermanos en Conexión</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 12 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-12.jpg" alt="Familia Vega · Luz del Desierto" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Vega · Luz del Desierto</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 13 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-13.jpg" alt="Mamá & Bebé · Ternura Pura" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Mamá & Bebé · Ternura Pura</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 14 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-14.jpg" alt="Celebración Familiar al Aire Libre" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Celebración Familiar al Aire Libre</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Familias 15 / 15 -->
+        <div class="portfolio-item reveal" data-category="families">
+          <img src="images/gallery/family-15.jpg" alt="Familia Flores · Recuerdos Eternos" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Familia Flores · Recuerdos Eternos</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-people-roof"></i> Familias</span>
+          </div>
+        </div>
+        <!-- Maquillaje 1 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-1.jpg" alt="Glow Editorial Skin & Lashes" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Glow Editorial Skin & Lashes</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Maquillaje 2 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-2.jpg" alt="Social Glam Makeup para Evento" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Social Glam Makeup para Evento</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Maquillaje 3 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-3.jpg" alt="Ondas al Agua & Peinado Glam" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Ondas al Agua & Peinado Glam</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Maquillaje 4 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-4.jpg" alt="Maquillaje de Novia Natural" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Maquillaje de Novia Natural</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Maquillaje 5 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-5.jpg" alt="Backstage & Pinceles de Estudio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Backstage & Pinceles de Estudio</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Maquillaje 6 / 6 -->
+        <div class="portfolio-item reveal" data-category="makeup">
+          <img src="images/gallery/makeup-6.jpg" alt="Smokey Eyes & Labios Nude" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Smokey Eyes & Labios Nude</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-paintbrush"></i> Maquillaje</span>
+          </div>
+        </div>
+        <!-- Parejas 1 / 4 -->
+        <div class="portfolio-item reveal" data-category="couples">
+          <img src="images/gallery/couple-1.jpg" alt="Sofía & Diego · Atardecer en Phoenix" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Sofía & Diego · Atardecer en Phoenix</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-user-group"></i> Parejas</span>
+          </div>
+        </div>
+        <!-- Parejas 2 / 4 -->
+        <div class="portfolio-item reveal" data-category="couples">
+          <img src="images/gallery/couple-3.jpg" alt="Abrazo al Anochecer · Desert Love" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Abrazo al Anochecer · Desert Love</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-user-group"></i> Parejas</span>
+          </div>
+        </div>
+        <!-- Parejas 3 / 4 -->
+        <div class="portfolio-item reveal" data-category="couples">
+          <img src="images/gallery/couple-2.jpg" alt="Compromiso en las Rocas Rojas" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Compromiso en las Rocas Rojas</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-user-group"></i> Parejas</span>
+          </div>
+        </div>
+        <!-- Parejas 4 / 4 -->
+        <div class="portfolio-item reveal" data-category="couples">
+          <img src="images/gallery/couple-4.jpg" alt="Sesión Íntima en Estudio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Sesión Íntima en Estudio</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-user-group"></i> Parejas</span>
+          </div>
+        </div>
+        <!-- Profesionales 1 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-1.jpg" alt="Lic. Valeria Ríos · Headshot Corporativo" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Lic. Valeria Ríos · Headshot Corporativo</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 2 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-2.jpg" alt="Branding para Emprendedora Creativa" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Branding para Emprendedora Creativa</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 3 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-3.jpg" alt="Executive Profile · Phoenix Downtown" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Executive Profile · Phoenix Downtown</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 4 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-4.jpg" alt="Retrato Editorial para Conferencista" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Retrato Editorial para Conferencista</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 5 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-5.jpg" alt="Marca Personal · Coach & Consultora" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Marca Personal · Coach & Consultora</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 6 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-6.jpg" alt="Retrato Profesional en Estudio" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Retrato Profesional en Estudio</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 7 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-7.jpg" alt="Agente Inmobiliario · Scottsdale Real Estate" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Agente Inmobiliario · Scottsdale Real Estate</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Profesionales 8 / 8 -->
+        <div class="portfolio-item reveal" data-category="professionals">
+          <img src="images/gallery/pro-8.jpg" alt="Directora Creativa · Look Minimalista" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Directora Creativa · Look Minimalista</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-briefcase"></i> Profesionales</span>
+          </div>
+        </div>
+        <!-- Bodas 1 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-1.jpg" alt="Evelyn & Mateo · Boda en Arizona" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Evelyn & Mateo · Boda en Arizona</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+        <!-- Bodas 2 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-6.jpg" alt="Retrato Nupcial de la Novia" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Retrato Nupcial de la Novia</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+        <!-- Bodas 3 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-4.jpg" alt="Primer Baile Bajo las Luces" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Primer Baile Bajo las Luces</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+        <!-- Bodas 4 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-5.jpg" alt="Ceremonia Íntima al Atardecer" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Ceremonia Íntima al Atardecer</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+        <!-- Bodas 5 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-3.jpg" alt="Detalle de Anillos & Ramo Floral" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Detalle de Anillos & Ramo Floral</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+        <!-- Bodas 6 / 6 -->
+        <div class="portfolio-item reveal" data-category="weddings">
+          <img src="images/gallery/wedding-6.jpg" alt="Salida de los Novios · Golden Sparkles" loading="lazy">
+          <div class="portfolio-item-meta">
+            <span class="portfolio-item-title">Salida de los Novios · Golden Sparkles</span>
+            <span class="portfolio-item-cat"><i class="fa-solid fa-ring"></i> Bodas</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Reservation Callout -->
+      <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
+        <h3 style="font-family: var(--font-serif); font-size: 1.7rem; margin-bottom: 0.5rem;" data-i18n="port_callout_title">¿Te gustaría tener una sesión similar?</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.4rem;" data-i18n="port_callout_desc">Contáctame hoy mismo para consultar disponibilidad y armar tu moodboard personalizado.</p>
+        <a href="booking.html" class="btn btn-primary" style="padding: 0.85rem 2.2rem;" data-i18n="port_callout_btn">RESERVAR MI SESIÓN AHORA</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev" aria-label="Anterior">&#10094;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav-btn lightbox-next" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-hero-cta reveal">
+        <div class="footer-cta-text">
+          <span class="footer-script-title" data-i18n="footer_script">Hablemos</span>
+          <span class="footer-sub-prompt" data-i18n="footer_prompt">¿LISTA PARA CREAR ALGO INCREÍBLE?</span>
+        </div>
+        <div>
+          <a href="booking.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_footer">RESERVAR AHORA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+        <div class="footer-social-aside">
+          <div class="footer-social-icons">
+            <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a href="https://instagram.com/isaphotographer" target="_blank" rel="noopener" class="footer-instagram-tag">
+            <span data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span> · @isaphotographer
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-grid reveal">
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.2rem;" aria-label="Isa Hernandez Photo & Makeup LLC">
+            <span class="brand-name" style="font-size: 2.1rem; color: #FFFFFF; line-height: 0.9;">Isa Hernandez</span>
+            <span class="brand-sub" style="color: var(--accent-sand);">PHOTO &amp; MAKEUP LLC</span>
+          </a>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); max-width: 320px; line-height: 1.8;" data-i18n="footer_bio">
+            Fotografía auténtica y maquillaje profesional en Phoenix, Arizona. Creando recuerdos atemporales con arte y emoción.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_explore">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="about.html" data-i18n="nav_about">Sobre Isa</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Servicios & Precios</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portafolio</a></li>
+            <li><a href="policies.html" data-i18n="nav_policies">Políticas & Legal</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">Experiencia & FAQ</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+            <li><a href="booking.html" data-i18n="nav_booking">Reservar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_contact">Contacto & Estudio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <a href="https://maps.google.com/?q=1825+E+Northern+Ave,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: underline;">
+              <i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>1825 E Northern Ave, Phoenix, AZ 85020
+            </a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Email: <a href="mailto:Isavision21@gmail.com" style="color: #FFFFFF;">Isavision21@gmail.com</a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 1.2rem;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Tel / WhatsApp: <a href="https://wa.me/16025823407" style="color: #FFFFFF;">+1 (602) 582-3407</a>
+          </p>
+          <a href="booking.html" class="btn btn-sm btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span data-i18n="footer_copyright">© Isa Hernandez Photo & Makeup LLC · Phoenix, AZ</span>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="policies.html" style="color: rgba(255,255,255,0.85); text-decoration: underline;">Políticas Oficiales & Términos</a>
+          <a href="policies.html#datos" style="color: rgba(255,255,255,0.85);">Privacidad</a>
+        </div>
+        <a href="https://maps.google.com/?q=1825+E+Northern+Ave,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85); text-decoration: none;">
+          <i class="fa-solid fa-map-pin" style="margin-right: 0.4rem; color: var(--accent-sand);"></i>1825 E Northern Ave, Phoenix, AZ 85020
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Language Selector Bubble -->
+  <div class="mobile-floating-lang" aria-label="Language Selector">    <i class="fa-solid fa-globe" style="color: rgba(255,255,255,0.7); font-size: 0.75rem; margin-right: 2px;"></i>    <button class="lang-btn active" data-lang="es">ES</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
